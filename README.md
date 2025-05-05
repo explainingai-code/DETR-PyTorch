@@ -8,6 +8,12 @@ For easy and quicker training/testing, I use fixed-size images of 640x640(unlike
 This repo was only meant for better understanding of DETR code. For getting best results please use [official implementation](https://github.com/facebookresearch/detr)
 
 ## DETR Explanation and Implementation Video
+<a href="https://www.youtube.com/watch?v=v900ZFKkWxA">
+   <img alt="DETR Explanation Video" src="https://github.com/user-attachments/assets/3e47bf7d-0e7b-46d7-9d1b-945eaf4d76de" width="400">
+</a>
+<a href="https://www.youtube.com/watch?v=v900ZFKkWxA">
+   <img alt="DETR Implementation Video" src="https://github.com/user-attachments/assets/99bea538-6062-44dd-8752-982839a5f893" width="400">
+</a>
 
 
 
@@ -15,7 +21,11 @@ This repo was only meant for better understanding of DETR code. For getting best
 I have used frozen Resnet 34 backbone with 25 query objects. Using this configuration, one should be able to get **65% mAP(with NMS) and 60%(without)** by training on VOC 2007+2012 trainval images.
 To get better results, use trainable Resnet-50/101 with 100 query objects.
 
+<img src="https://github.com/user-attachments/assets/9f2a0e2d-8b82-45b3-8566-fcc2f9313bbd" width="250">
+<img src="https://github.com/user-attachments/assets/762ec1f2-bd50-43ee-ab88-6cd439425f96" width="250">
 </br>
+<img src="https://github.com/user-attachments/assets/07a7ffa1-7ae3-422d-ae4d-7f5aa6c59151" width="250">
+<img src="https://github.com/user-attachments/assets/6c0aa6c4-ffe4-4661-bbc0-76de2aacc511" width="250">
 
 Here's an evaluation result(AP50 with NMS) that I got after training ~250 epochs.
 ```
