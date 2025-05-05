@@ -1,0 +1,40 @@
+dataset_params:
+  train_im_sets: ['data/VOC2007', 'data/VOC2012']
+  test_im_sets: ['data/VOC2007-test']
+  num_classes : 21
+  bg_class_idx : 0
+  im_size : 640
+
+model_params:
+  im_channels : 3
+  backbone_channels : 512
+  d_model : 256
+  num_queries : 25
+  freeze_backbone : True
+  encoder_layers : 4
+  encoder_attn_heads : 8
+  decoder_layers : 4
+  decoder_attn_heads : 8
+  dropout_prob : 0.1
+  ff_inner_dim : 2048
+  cls_cost_weight : 1.
+  l1_cost_weight : 5.
+  giou_cost_weight : 2.
+  bg_class_weight : 0.1
+  nms_threshold : 0.5
+
+
+train_params:
+  task_name: 'voc'
+  eval_score_threshold: 0.0
+  infer_score_threshold: 0.5
+  use_nms_eval : False
+  use_nms_infer : True
+  seed: 1111
+  acc_steps: 1
+  num_epochs: 300
+  batch_size: 4
+  lr_steps: [ 200 ]
+  lr: 0.0001
+  log_steps : 500
+  ckpt_name: 'detr_voc2007.pth'
