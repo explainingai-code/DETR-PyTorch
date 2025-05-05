@@ -4,7 +4,8 @@ DETR Implementation in Pytorch
 This repository implements DETR, with training, inference and mAP evaluation in PyTorch.
 The repo provides code to train on voc dataset. Specifically I trained on trainval images of VOC 2007+2012 dataset and for testing, I use VOC2007 test set.
 For easy and quicker training/testing, I use fixed-size images of 640x640(unlike official repo which uses multi-scale training and tests on 800 sized images).
- 
+
+This repo was only meant for better understanding of DETR code. For getting best results please use [official implementation](https://github.com/facebookresearch/detr)
 
 ## DETR Explanation and Implementation Video
 
