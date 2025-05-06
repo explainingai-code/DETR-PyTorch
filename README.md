@@ -11,7 +11,7 @@ This repo was only meant for better understanding of DETR. Though the overall fl
 <a href="https://www.youtube.com/watch?v=v900ZFKkWxA">
    <img alt="DETR Explanation Video" src="https://github.com/user-attachments/assets/3e47bf7d-0e7b-46d7-9d1b-945eaf4d76de" width="400">
 </a>
-<a href="https://www.youtube.com/watch?v=v900ZFKkWxA">
+<a href="https://www.youtube.com/watch?v=NG09OJQPWWQ">
    <img alt="DETR Implementation Video" src="https://github.com/user-attachments/assets/99bea538-6062-44dd-8752-982839a5f893" width="400">
 </a>
 
